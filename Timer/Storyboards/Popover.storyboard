@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1ME-GV-dDL">
+            <objects>
+                <viewController storyboardIdentifier="popover" id="tSt-gQ-eer" sceneMemberID="viewController">
+                    <view key="view" id="LUW-5m-AWd" customClass="Popover" customModule="Timer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="99" height="35"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DSr-Sr-AqK">
+                                <rect key="frame" x="12" y="10" width="26" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="120" id="OYH-As-cfB">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gSe-4W-FwO">
+                                <rect key="frame" x="35" y="10" width="53" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Minuten" id="sbi-M4-sek">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="DSr-Sr-AqK" firstAttribute="centerY" secondItem="LUW-5m-AWd" secondAttribute="centerY" id="4Hj-uy-ONA"/>
+                            <constraint firstItem="DSr-Sr-AqK" firstAttribute="leading" secondItem="LUW-5m-AWd" secondAttribute="leading" constant="14" id="7Bm-J0-1tc"/>
+                            <constraint firstItem="DSr-Sr-AqK" firstAttribute="baseline" secondItem="gSe-4W-FwO" secondAttribute="baseline" id="e2I-Xj-92u"/>
+                            <constraint firstItem="gSe-4W-FwO" firstAttribute="leading" secondItem="LUW-5m-AWd" secondAttribute="leading" constant="37" id="mrG-zB-JyC"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="LText" destination="DSr-Sr-AqK" id="DFE-8S-YYT"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <customObject id="HSe-wt-bF8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109.5" y="79.5"/>
+        </scene>
+    </scenes>
+</document>
